@@ -1,0 +1,151 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  background: #0EB264;
+  line-height: 1.3;
+  overflow: hidden;
+}
+
+#container {
+  height: 500px;
+  width: 380px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  background: #EE5B10;
+  color: white;
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+}
+
+input {
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+input[type='number'] {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+input[type='number']:hover {
+  background: #fff;
+  border: 3px solid #EE5B10 ;
+}
+
+#billAmount {
+  font-size: 15px;
+  background: #f7f7f7;
+}
+
+#billAmount:focus {
+  background: #fff;
+  border: 3px solid #EE5B10 ;
+  outline: none;
+}
+
+#peopleAmount {
+  width: 50%;
+  background: #f7f7f7;
+  font-size: 15px;
+}
+
+#peopleAmount:focus {
+  background: #fff;
+  border: 3px solid #EE5B10 ;
+  outline: none;
+}
+
+#serviceQual {
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+#serviceQual:hover {
+  background: #fff;
+  border: 3px solid #EE5B10 ;
+  outline: none;
+}
+
+#serviceQual:focus {
+  background: #fff;
+  border: 3px solid #EE5B10 ;
+  outline: none;
+} 
+
+button {
+  height: 40px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 22px auto;
+  border-radius: 5px;
+  background: #EE5B10;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 17px;
+}
+
+button:hover {
+  background: #865843 ;
+}
+
+button:active {
+  background: #C44812;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#totalTip {
+  font-size: 28px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalBill {
+  font-size: 28px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalBill::before {
+  content: 'Total Bill';
+  font-size: 20px;
+  font-weight: bold;
+  /* display: block; */
+  text-transform: uppercase;
+}
+#totalTip::before {
+  content: 'Tip Amount';
+  font-size: 20px;
+  font-weight: bold;
+  /* display: block; */
+  text-transform: uppercase;
+}
+
+#each {
+  display: block;
+}
+
